@@ -130,7 +130,7 @@ thành viên vẫn dùng tên/MSSV của chính mình trong tên repo và điề
 - [Checkpoint và self-check](CHECKPOINTS.md)
 - [Quy tắc làm bài](RULES.md)
 - [Mẫu khai báo nhóm — chỉ dùng khi làm nhóm](TEAM.md)
-- [Template report](reports/REPORT_TEMPLATE.md)
+- [Template report](reports/REPORT)
 - [Reviewer checklist](reports/REVIEW_PARTNER_TEMPLATE.md)
 - [Lý thuyết ReID](docs/day3-reid-theory.md)
 

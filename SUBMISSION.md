@@ -32,7 +32,7 @@ nhân: mỗi thành viên nộp repo có tên/MSSV của chính mình. Khi làm 
 | `outputs/model_reid_clip_01.txt` | treatment YOLO26n + BoT-SORT + ReID theo MOT |
 | `outputs/model_run_config.json` | detector input, package/version và tracker config |
 | `outputs/eval_bytetrack_vs_gold.json`, `outputs/eval_reid_vs_gold.json`, `outputs/eval_reid_vs_me.json` | evidence để so sánh model với reference và nhãn cuối của bạn |
-| `reports/REPORT.md` | report hoàn chỉnh từ [mẫu](reports/REPORT_TEMPLATE.md) |
+| `reports/REPORT.md` | report hoàn chỉnh từ [mẫu](reports/REPORT) |
 | `TEAM.md` | chỉ khi làm nhóm; khai báo thành viên và phần việc từng người |
 
 Không commit `gold/`, model weights (`*.pt`), file ZIP, hoặc thư mục

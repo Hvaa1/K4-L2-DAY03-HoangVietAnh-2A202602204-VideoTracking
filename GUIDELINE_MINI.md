@@ -7,7 +7,7 @@
 > người trong nhóm gán khác nhau, gần như luôn là vì file này chưa nói rõ — chứ
 > không phải vì ai kém.
 
-Nhóm / tên: `...`
+Nhóm / tên: Hoàng Việt Anh
 Clip: `clip_01`, `clip_02`
 
 ---
@@ -27,44 +27,44 @@ Bổ sung của nhóm (nếu có): `...`
 
 ## 2. Luật ID — phần quan trọng nhất
 
-| Tình huống | Luật của nhóm | Vì sao |
-| --- | --- | --- |
-| Xe bị che một phần rồi hiện lại | giữ nguyên ID nếu bị che **dưới ... frame** (mặc định của lab: 25 frame = 2 giây @ 12.5 fps) | `...` |
-| Xe bị che lâu hơn ngưỡng trên | `...` | `...` |
-| Xe rời khung hình rồi quay lại | mặc định: **track mới** | `...` |
-| Hai xe cắt nhau / chồng lên nhau | `...` | `...` |
+| Tình huống | Luật của nhóm                                                                               | Vì sao                         |
+| --- |---------------------------------------------------------------------------------------------|--------------------------------|
+| Xe bị che một phần rồi hiện lại | giữ nguyên ID nếu bị che **dưới 15 frame** (mặc định của lab: 25 frame = 2 giây @ 12.5 fps) | Do thời gian xe bị che quá ít  |
+| Xe bị che lâu hơn ngưỡng trên | Có thể thay đổi nhãn hoặc không tùy tình huống                                              | có thể xe khác đã xuất hiện    |
+| Xe rời khung hình rồi quay lại | mặc định: **track mới**                                                                     | Vì có thể xe mới đã xuất hiện  |
+| Hai xe cắt nhau / chồng lên nhau | Vẫn giữ nguyên id                                                                           | do vẫn là 1 xe từ đầu đến cuối |
 
 ## 3. Luật bbox
 
-| Tình huống | Luật của nhóm |
-| --- | --- |
-| Xe bị cắt bởi rìa ảnh | bbox chạm đúng rìa, không đoán phần ngoài ảnh |
-| Xe bị xe khác che một phần | bbox ôm phần **nhìn thấy được** |
-| Xe vừa xuất hiện, còn rất nhỏ / rất mờ | bắt đầu track từ frame đầu tiên xác định được là xe bốn bánh; ngưỡng nhóm chọn: `...` |
-| Xe đang đỗ, không di chuyển | `...` |
-| Keyframe đặt dày ở đâu | `...` |
+| Tình huống | Luật của nhóm                                                                                                                          |
+| --- |----------------------------------------------------------------------------------------------------------------------------------------|
+| Xe bị cắt bởi rìa ảnh | bbox chạm đúng rìa, không đoán phần ngoài ảnh                                                                                          |
+| Xe bị xe khác che một phần | bbox ôm phần **nhìn thấy được**                                                                                                        |
+| Xe vừa xuất hiện, còn rất nhỏ / rất mờ | bắt đầu track từ frame đầu tiên xác định được là xe bốn bánh; ngưỡng nhóm chọn: thời điểm mắt người có thể nhận diện được là xe 4 bánh |
+| Xe đang đỗ, không di chuyển | vẫn gắn bbox                                                                                                                           |
+| Keyframe đặt dày ở đâu | thời điểm xe bị cắt, lúc đầu và kết thúc                                                                                               |
 
 ## 4. Ít nhất ba ca mơ hồ đã gặp thật
 
 Ghi **frame cụ thể** và **ID cụ thể**, không ghi chung chung.
 
 ### Ca 1
-- Clip / frame / ID: `...`
-- Tình huống: `...`
-- Quyết định: `...`
-- Lý do: `...`
+- Clip / frame / ID: 0
+- Tình huống: 0
+- Quyết định: 0
+- Lý do: 0
 
 ### Ca 2
-- Clip / frame / ID: `...`
-- Tình huống: `...`
-- Quyết định: `...`
-- Lý do: `...`
+- Clip / frame / ID: 0
+- Tình huống: 0
+- Quyết định: 0
+- Lý do: 0
 
 ### Ca 3
-- Clip / frame / ID: `...`
-- Tình huống: `...`
-- Quyết định: `...`
-- Lý do: `...`
+- Clip / frame / ID: 0
+- Tình huống: 0
+- Quyết định: 0
+- Lý do: 0
 
 ## 5. Sửa gì sau khi chấm với gold và sau khi kiểm chéo
 
